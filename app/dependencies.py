@@ -1,4 +1,4 @@
-from fastapi import HTTPException, status, Depends
+from fastapi import HTTPException, Depends
 from fastapi.security import OAuth2PasswordBearer
 
 from app.auth import verify_token

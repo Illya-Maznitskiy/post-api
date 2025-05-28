@@ -6,7 +6,7 @@ class InMemoryPostStore:
     """Thread-safe in-memory store for user posts."""
 
     def __init__(self):
-        """Initialize empty posts, user-post mapping, lock, and post ID counter."""
+        """Init empty posts, user-post mapping, lock, and post ID counter."""
         self._posts: Dict[int, Dict] = {}
         self._user_posts: Dict[str, List[int]] = {}
         self._lock = Lock()
